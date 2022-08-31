@@ -1,0 +1,34 @@
+{
+  "name": "eldiario",
+  "version": "1.0.0",
+  "description": "Decentralized social media feed powered by the LUKSO blockchain.",
+  "scripts": {
+    "start": "cd frontend && npm run dev",
+    "init": "cd frontend && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuszy/eldiario.git"
+  },
+  "keywords": [
+    "lukso",
+    "lyx",
+    "lyxe",
+    "blockchain",
+    "web3",
+    "universalprofile",
+    "up",
+    "nft",
+    "social",
+    "media",
+    "feed",
+    "ethereum",
+    "eth"
+  ],
+  "author": "Dennis Tuszynski",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Tuszy/eldiario/issues"
+  },
+  "homepage": "https://github.com/Tuszy/eldiario#readme"
+}

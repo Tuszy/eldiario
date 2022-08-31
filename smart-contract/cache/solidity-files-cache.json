@@ -1,0 +1,1733 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/ERC725YEnumerableSetUtil.sol": {
+      "lastModificationDate": 1661184732044,
+      "contentHash": "10c3a982d34eb7849014578077a41493",
+      "sourceName": "contracts/ERC725YEnumerableSetUtil.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc725/smart-contracts/contracts/ERC725Y.sol",
+        "@erc725/smart-contracts/contracts/interfaces/IERC725Y.sol",
+        "@lukso/lsp-smart-contracts/contracts/LSP2ERC725YJSONSchema/LSP2Utils.sol",
+        "./LSP2KeyUtil.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ERC725YEnumerableSetUtil"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@erc725/smart-contracts/contracts/ERC725Y.sol": {
+      "lastModificationDate": 1660386532888,
+      "contentHash": "ebbf5e1fa0f26f4ecca3541405ac0f42",
+      "sourceName": "@erc725/smart-contracts/contracts/ERC725Y.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "./custom/OwnableUnset.sol",
+        "./ERC725YCore.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC725Y"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@erc725/smart-contracts/contracts/interfaces/IERC725Y.sol": {
+      "lastModificationDate": 1660386533030,
+      "contentHash": "29ce4703858278981a29678041b0ccb5",
+      "sourceName": "@erc725/smart-contracts/contracts/interfaces/IERC725Y.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC725Y"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/LSP2ERC725YJSONSchema/LSP2Utils.sol": {
+      "lastModificationDate": 1660386534210,
+      "contentHash": "6ae1f30351be1ae41b3478760fb4bb53",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/LSP2ERC725YJSONSchema/LSP2Utils.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "solidity-bytes-utils/contracts/BytesLib.sol",
+        "../Utils/UtilsLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LSP2Utils"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/LSP2KeyUtil.sol": {
+      "lastModificationDate": 1661184732046,
+      "contentHash": "8a4078fa54028e61f4e5d627007f7c51",
+      "sourceName": "contracts/LSP2KeyUtil.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "LSP2KeyUtil"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1660386534689,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@erc725/smart-contracts/contracts/custom/OwnableUnset.sol": {
+      "lastModificationDate": 1660386533088,
+      "contentHash": "5fc9508265eedd9fc8c4157eae085e87",
+      "sourceName": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableUnset"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@erc725/smart-contracts/contracts/ERC725YCore.sol": {
+      "lastModificationDate": 1660386532900,
+      "contentHash": "65c519b034707770a8a78e565f627ceb",
+      "sourceName": "@erc725/smart-contracts/contracts/ERC725YCore.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "./interfaces/IERC725Y.sol",
+        "./utils/GasLib.sol",
+        "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "./custom/OwnableUnset.sol",
+        "./constants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC725YCore"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1660386535041,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@erc725/smart-contracts/contracts/utils/GasLib.sol": {
+      "lastModificationDate": 1660386532980,
+      "contentHash": "f6b4a80a53e98110c2017bc6ef3b732a",
+      "sourceName": "@erc725/smart-contracts/contracts/utils/GasLib.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GasLib"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@erc725/smart-contracts/contracts/constants.sol": {
+      "lastModificationDate": 1660386532712,
+      "contentHash": "ad59b2cb2cb2939b29a88e8e5b4981c1",
+      "sourceName": "@erc725/smart-contracts/contracts/constants.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/solidity-bytes-utils/contracts/BytesLib.sol": {
+      "lastModificationDate": 1660386530992,
+      "contentHash": "9c6b01be648f655631038d79648a7c05",
+      "sourceName": "solidity-bytes-utils/contracts/BytesLib.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0 <0.9.0"
+      ],
+      "artifacts": [
+        "BytesLib"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/Utils/UtilsLib.sol": {
+      "lastModificationDate": 1660386534633,
+      "contentHash": "c2ca09f4961b74b4ba52af48b81f8842",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/Utils/UtilsLib.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UtilsLib"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/SocialNetworkPost.sol": {
+      "lastModificationDate": 1661184732047,
+      "contentHash": "df0a776098e901e29821518202d887c8",
+      "sourceName": "contracts/SocialNetworkPost.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "@erc725/smart-contracts/contracts/interfaces/IERC725Y.sol",
+        "@erc725/smart-contracts/contracts/ERC725YCore.sol",
+        "@erc725/smart-contracts/contracts/ERC725Y.sol",
+        "./ERC725YEnumerableSetUtil.sol",
+        "./ISocialNetworkPost.sol",
+        "./SocialNetworkPostType.sol",
+        "./SocialNetworkConstants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "SocialNetworkPost"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/ISocialNetworkPost.sol": {
+      "lastModificationDate": 1661184732045,
+      "contentHash": "9c0297bc901f6ab24c17b0cf8f831df1",
+      "sourceName": "contracts/ISocialNetworkPost.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "@erc725/smart-contracts/contracts/interfaces/IERC725Y.sol",
+        "./SocialNetworkPostType.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ISocialNetworkPost"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/SocialNetworkPostType.sol": {
+      "lastModificationDate": 1661184732048,
+      "contentHash": "1b4d75dac5a34a53bf39b59164efdc07",
+      "sourceName": "contracts/SocialNetworkPostType.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": []
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/SocialNetworkConstants.sol": {
+      "lastModificationDate": 1661184732047,
+      "contentHash": "0ab74180ce21b8fc18c3832117211f6b",
+      "sourceName": "contracts/SocialNetworkConstants.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": []
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/SocialNetworkPostFactoryTest.sol": {
+      "lastModificationDate": 1661184732048,
+      "contentHash": "00c2e92512d23101fc82d16c0e1bf035",
+      "sourceName": "contracts/SocialNetworkPostFactoryTest.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./SocialNetworkPost.sol",
+        "./SocialNetworkPostType.sol",
+        "./SocialNetworkPostFactory.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "SocialNetworkPostFactoryTest"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/SocialNetworkPostFactory.sol": {
+      "lastModificationDate": 1661184732048,
+      "contentHash": "c338cd8370fe7938b8843fffce9a8ab3",
+      "sourceName": "contracts/SocialNetworkPostFactory.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./SocialNetworkPost.sol",
+        "./SocialNetworkPostType.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "SocialNetworkPostFactory"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/SocialNetwork.sol": {
+      "lastModificationDate": 1661876954475,
+      "contentHash": "c8bdce161818406fbecbbe8d6b489517",
+      "sourceName": "contracts/SocialNetwork.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "@erc725/smart-contracts/contracts/interfaces/IERC725Y.sol",
+        "@erc725/smart-contracts/contracts/constants.sol",
+        "@erc725/smart-contracts/contracts/ERC725YCore.sol",
+        "@erc725/smart-contracts/contracts/ERC725Y.sol",
+        "@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4Constants.sol",
+        "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAsset.sol",
+        "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol",
+        "./ISocialNetwork.sol",
+        "./SocialNetworkProfileDataFactory.sol",
+        "./ISocialNetworkProfileData.sol",
+        "./SocialNetworkPostFactory.sol",
+        "./ISocialNetworkPost.sol",
+        "./SocialNetworkPostType.sol",
+        "./SocialNetworkConstants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "SocialNetwork"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4Constants.sol": {
+      "lastModificationDate": 1660386534254,
+      "contentHash": "b99745fb313bb9e1b0b731faca80c4f8",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4Constants.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAsset.sol": {
+      "lastModificationDate": 1660386534474,
+      "contentHash": "20cd37f56fdf7e32f1509814983c390c",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAsset.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "@erc725/smart-contracts/contracts/ERC725YCore.sol",
+        "./LSP8IdentifiableDigitalAssetCore.sol",
+        "../LSP4DigitalAssetMetadata/LSP4DigitalAssetMetadata.sol",
+        "./LSP8Constants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LSP8IdentifiableDigitalAsset"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/ISocialNetwork.sol": {
+      "lastModificationDate": 1661877407168,
+      "contentHash": "df8e6bc48ec2da520150ff6a2f1cc395",
+      "sourceName": "contracts/ISocialNetwork.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/ILSP8IdentifiableDigitalAsset.sol",
+        "./SocialNetworkPostType.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ISocialNetwork"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/SocialNetworkProfileDataFactory.sol": {
+      "lastModificationDate": 1661184732049,
+      "contentHash": "adbd5815c14e5d1db8386f73b35cac23",
+      "sourceName": "contracts/SocialNetworkProfileDataFactory.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./SocialNetworkProfileData.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "SocialNetworkProfileDataFactory"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/ISocialNetworkProfileData.sol": {
+      "lastModificationDate": 1661184732046,
+      "contentHash": "7fc3a732bd9a9206e2928f0da9c23852",
+      "sourceName": "contracts/ISocialNetworkProfileData.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "@erc725/smart-contracts/contracts/interfaces/IERC725Y.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ISocialNetworkProfileData"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol": {
+      "lastModificationDate": 1660386534480,
+      "contentHash": "c6a59a6e1096c9aa2a44d1d050aa2158",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../LSP1UniversalReceiver/ILSP1UniversalReceiver.sol",
+        "./ILSP8IdentifiableDigitalAsset.sol",
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "../Custom/ERC165Checker.sol",
+        "@openzeppelin/contracts/utils/Address.sol",
+        "@openzeppelin/contracts/utils/Context.sol",
+        "@erc725/smart-contracts/contracts/ERC725Y.sol",
+        "./LSP8Errors.sol",
+        "../LSP1UniversalReceiver/LSP1Constants.sol",
+        "./LSP8Constants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LSP8IdentifiableDigitalAssetCore"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4DigitalAssetMetadata.sol": {
+      "lastModificationDate": 1660386534261,
+      "contentHash": "7fd5fed007e9cb9d3543a41f6939f7ee",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4DigitalAssetMetadata.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc725/smart-contracts/contracts/ERC725Y.sol",
+        "./LSP4Constants.sol",
+        "./LSP4Errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LSP4DigitalAssetMetadata"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8Constants.sol": {
+      "lastModificationDate": 1660386534468,
+      "contentHash": "6b84b253f02e13ef094c670d0668243a",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8Constants.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/LSP1UniversalReceiver/ILSP1UniversalReceiver.sol": {
+      "lastModificationDate": 1660386533902,
+      "contentHash": "02e3b93369fe7d9a306cf1bd70e3a474",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/LSP1UniversalReceiver/ILSP1UniversalReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ILSP1UniversalReceiver"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/ILSP8IdentifiableDigitalAsset.sol": {
+      "lastModificationDate": 1660386534064,
+      "contentHash": "94ec3ed5c558e5059396d4ff9657ba9a",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/ILSP8IdentifiableDigitalAsset.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "@erc725/smart-contracts/contracts/interfaces/IERC725Y.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ILSP8IdentifiableDigitalAsset"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@openzeppelin/contracts/utils/structs/EnumerableSet.sol": {
+      "lastModificationDate": 1660386534613,
+      "contentHash": "aec6e37069dfaa5e3d5fd66ef2274b0c",
+      "sourceName": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/Custom/ERC165Checker.sol": {
+      "lastModificationDate": 1660386533872,
+      "contentHash": "93dfadfc8f6e4f86fc25b534b4d4be31",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/Custom/ERC165Checker.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Checker"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1660386534387,
+      "contentHash": "c476b3895a94798b88a4bb97399e6dfe",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1660386534445,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8Errors.sol": {
+      "lastModificationDate": 1660386534471,
+      "contentHash": "a498ed111477d427129c7d7d7296861a",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8Errors.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/LSP1UniversalReceiver/LSP1Constants.sol": {
+      "lastModificationDate": 1660386534152,
+      "contentHash": "8090e68e1a8c68f7465681ab0db6bd1b",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/LSP1UniversalReceiver/LSP1Constants.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/node_modules/@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4Errors.sol": {
+      "lastModificationDate": 1660386534271,
+      "contentHash": "3a909059e16869ac5da43bbd54476ae9",
+      "sourceName": "@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4Errors.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/SocialNetworkProfileData.sol": {
+      "lastModificationDate": 1661184732049,
+      "contentHash": "240527501c3d4debacb846b37be3f608",
+      "sourceName": "contracts/SocialNetworkProfileData.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "@erc725/smart-contracts/contracts/ERC725YCore.sol",
+        "@erc725/smart-contracts/contracts/ERC725Y.sol",
+        "./ERC725YEnumerableSetUtil.sol",
+        "./ISocialNetworkProfileData.sol",
+        "./SocialNetworkConstants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "SocialNetworkProfileData"
+      ]
+    },
+    "/Users/tuszy/Documents/eldiario-dev/smart-contract/contracts/SocialNetworkProfileDataFactoryTest.sol": {
+      "lastModificationDate": 1661184732050,
+      "contentHash": "570884d61d7a2ced74e86cdfb815d726",
+      "sourceName": "contracts/SocialNetworkProfileDataFactoryTest.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./SocialNetworkProfileData.sol",
+        "./SocialNetworkProfileDataFactory.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "SocialNetworkProfileDataFactoryTest"
+      ]
+    }
+  }
+}

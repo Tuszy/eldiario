@@ -1,0 +1,67 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SocialNetworkProfileDataFactoryTest",
+  "sourceName": "contracts/SocialNetworkProfileDataFactoryTest.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newProfileData",
+          "type": "address"
+        }
+      ],
+      "name": "CreatedProfileData",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "createProfileData",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610226806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806303c9a9ee14610030575b600080fd5b61004361003e3660046101af565b61006c565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b6040517f5be9890400000000000000000000000000000000000000000000000000000000815230600482015273ffffffffffffffffffffffffffffffffffffffff82166024820152600090819073__$e1e9acb8cf0b7d9dd541aed3de0dc7916c$__90635be989049060440160206040518083038186803b1580156100f057600080fd5b505af4158015610104573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061012891906101d3565b90508073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff167fc526f72ec26506f08f6389092bfca57a188f64c1933263dd136c106dd87ed26360405160405180910390a392915050565b73ffffffffffffffffffffffffffffffffffffffff811681146101ac57600080fd5b50565b6000602082840312156101c157600080fd5b81356101cc8161018a565b9392505050565b6000602082840312156101e557600080fd5b81516101cc8161018a56fea2646970667358221220291a4042c41ef2db2962b03e84361ed4a542650e8aaf0e234d2e3e1116877c1164736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806303c9a9ee14610030575b600080fd5b61004361003e3660046101af565b61006c565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b6040517f5be9890400000000000000000000000000000000000000000000000000000000815230600482015273ffffffffffffffffffffffffffffffffffffffff82166024820152600090819073__$e1e9acb8cf0b7d9dd541aed3de0dc7916c$__90635be989049060440160206040518083038186803b1580156100f057600080fd5b505af4158015610104573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061012891906101d3565b90508073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff167fc526f72ec26506f08f6389092bfca57a188f64c1933263dd136c106dd87ed26360405160405180910390a392915050565b73ffffffffffffffffffffffffffffffffffffffff811681146101ac57600080fd5b50565b6000602082840312156101c157600080fd5b81356101cc8161018a565b9392505050565b6000602082840312156101e557600080fd5b81516101cc8161018a56fea2646970667358221220291a4042c41ef2db2962b03e84361ed4a542650e8aaf0e234d2e3e1116877c1164736f6c63430008090033",
+  "linkReferences": {
+    "contracts/SocialNetworkProfileDataFactory.sol": {
+      "SocialNetworkProfileDataFactory": [
+        {
+          "length": 20,
+          "start": 219
+        }
+      ]
+    }
+  },
+  "deployedLinkReferences": {
+    "contracts/SocialNetworkProfileDataFactory.sol": {
+      "SocialNetworkProfileDataFactory": [
+        {
+          "length": 20,
+          "start": 187
+        }
+      ]
+    }
+  }
+}
