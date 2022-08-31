@@ -12,7 +12,7 @@ Decentralized social media feed powered by the LUKSO blockchain.
 
 Video:
 
-[Demo Video](https://el-diar.io)
+[Demo Video](https://vimeo.com/745026419)
 # Functional Overview
 
 - register profile
@@ -43,6 +43,12 @@ Smart Contracts:
 - SocialNetwork smart contract: Extends LSP8 + contains all functions (un/subscribing profiles, un/liking posts, creating/commenting/sharing posts, tagging users...)
 - SocialNetworkProfileData smart contract: Extends ERC725Y + Represents registered profile with all the necessary data (liked posts, created posts, subscribers, subscriptions...)
 - SocialNetworkPost smart contract: Extends ERC725Y + Represents LSP8 token metadata contract for NFTs created by SocialNetwork instance (id => address of unique SocialNetworkPost instance) + Represents created post with all the necessary data (likes, comments, shares, content...) 
+# Execution
+1. Install NodeJS
+2. Clone this repo
+3. Open this repo in a terminal
+4. Install dependencies: npm init
+5. Run frontend: npm start
 # Future Tasks
 
 - Complete Redesign + UX Improvement
