@@ -1,0 +1,39 @@
+{
+  "name": "el-diario-smart-contract",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "node": "npx hardhat node",
+    "run": "npx hardhat run",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy-localhost": "npx hardhat run --network localhost scripts/deploy.js",
+    "deploy-lukso": "npx hardhat run --network lukso scripts/deploy-lukso.js"
+  },
+  "keywords": [
+    "lukso",
+    "lyx",
+    "lyxe",
+    "ethereum",
+    "eth"
+  ],
+  "author": "Dennis Tuszynski",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@openzeppelin/hardhat-upgrades": "^1.19.0",
+    "eslint": "^8.20.0",
+    "hardhat": "^2.10.1",
+    "hardhat-contract-sizer": "^2.6.1",
+    "hardhat-deploy": "^0.11.12",
+    "mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "@erc725/erc725.js": "^0.14.4",
+    "@erc725/smart-contracts": "^3.1.2",
+    "@lukso/lsp-factory.js": "^2.3.3",
+    "@lukso/lsp-smart-contracts": "^0.6.2",
+    "@openzeppelin/contracts": "^4.7.1"
+  }
+}
