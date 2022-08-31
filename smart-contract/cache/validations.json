@@ -1,0 +1,5354 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "ERC725Y": {
+        "src": "@erc725/smart-contracts/contracts/ERC725Y.sol:16",
+        "version": {
+          "withMetadata": "53ed062ec59ed41e9c2cfdabea0ca87a13c2559cde3227541159dfe7d91aadc5",
+          "withoutMetadata": "729c91f59517dd4625dc7ea77cbb3834bc2621906f5cb6827560521eb4f2e837",
+          "linkedWithoutMetadata": "729c91f59517dd4625dc7ea77cbb3834bc2621906f5cb6827560521eb4f2e837"
+        },
+        "inherit": [
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC725Y",
+            "src": "@erc725/smart-contracts/contracts/ERC725Y.sol:21"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "ERC725YCore": {
+        "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:25",
+        "inherit": [
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [
+          "GasLib"
+        ],
+        "methods": [
+          "getData(bytes32)",
+          "getData(bytes32[])",
+          "setData(bytes32,bytes)",
+          "setData(bytes32[],bytes[])",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "OwnableUnset": {
+        "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:11",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "IERC725Y": {
+        "src": "@erc725/smart-contracts/contracts/interfaces/IERC725Y.sol:13",
+        "inherit": [
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "getData(bytes32)",
+          "getData(bytes32[])",
+          "setData(bytes32,bytes)",
+          "setData(bytes32[],bytes[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "GasLib": {
+        "src": "@erc725/smart-contracts/contracts/utils/GasLib.sol:7",
+        "version": {
+          "withMetadata": "c75a5b7ce1f3108af3a65a919e6d08a155873760d9f008a5578624cf20c80767",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC165Checker": {
+        "src": "@lukso/lsp-smart-contracts/contracts/Custom/ERC165Checker.sol:21",
+        "version": {
+          "withMetadata": "15958ecda54a5382c262f4a9e3730a62881e44a2487e0902925342461c6cca10",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ILSP1UniversalReceiver": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP1UniversalReceiver/ILSP1UniversalReceiver.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "universalReceiver(bytes32,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP2Utils": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP2ERC725YJSONSchema/LSP2Utils.sol:14",
+        "version": {
+          "withMetadata": "8e1848564b9dea748a2021c500719a5f80640e3d618134cce6b317da1e578dbe",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "BytesLib",
+          "UtilsLib"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP4DigitalAssetMetadata": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4DigitalAssetMetadata.sol:18",
+        "inherit": [
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "LSP4DigitalAssetMetadata",
+            "src": "@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4DigitalAssetMetadata.sol:25"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "ILSP8IdentifiableDigitalAsset": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/ILSP8IdentifiableDigitalAsset.sol:12",
+        "inherit": [
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "tokenOwnerOf(bytes32)",
+          "tokenIdsOf(address)",
+          "authorizeOperator(address,bytes32)",
+          "revokeOperator(address,bytes32)",
+          "isOperatorFor(address,bytes32)",
+          "getOperatorsOf(bytes32)",
+          "transfer(address,address,bytes32,bool,bytes)",
+          "transferBatch(address[],address[],bytes32[],bool,bytes[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP8IdentifiableDigitalAsset": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAsset.sol:20",
+        "version": {
+          "withMetadata": "ff797980c9016fafe288f79a034af8e7b70b212682727a26d88497807cecf36c",
+          "withoutMetadata": "53c12736c4b81432b7fb9f539b819d0b7eb1f2c0d25897a098911a65c81d6ebf",
+          "linkedWithoutMetadata": "53c12736c4b81432b7fb9f539b819d0b7eb1f2c0d25897a098911a65c81d6ebf"
+        },
+        "inherit": [
+          "LSP8IdentifiableDigitalAssetCore",
+          "ILSP8IdentifiableDigitalAsset",
+          "LSP4DigitalAssetMetadata",
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "Context",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(string,string,address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "LSP8IdentifiableDigitalAsset",
+            "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAsset.sol:30"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "_existingTokens",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:37"
+            },
+            {
+              "label": "_tokenOwners",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_bytes32,t_address)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:40"
+            },
+            {
+              "label": "_ownedTokens",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:43"
+            },
+            {
+              "label": "_operators",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:46"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)": {
+              "label": "mapping(address => struct EnumerableSet.Bytes32Set)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_address)": {
+              "label": "mapping(bytes32 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)": {
+              "label": "mapping(bytes32 => struct EnumerableSet.AddressSet)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)3299_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Bytes32Set)3192_storage": {
+              "label": "struct EnumerableSet.Bytes32Set",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Set)2998_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_indexes",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "LSP8IdentifiableDigitalAssetCore": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:30",
+        "inherit": [
+          "ILSP8IdentifiableDigitalAsset",
+          "IERC725Y",
+          "IERC165",
+          "Context"
+        ],
+        "libraries": [
+          "EnumerableSet",
+          "Address",
+          "ERC165Checker"
+        ],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "tokenOwnerOf(bytes32)",
+          "tokenIdsOf(address)",
+          "authorizeOperator(address,bytes32)",
+          "revokeOperator(address,bytes32)",
+          "isOperatorFor(address,bytes32)",
+          "getOperatorsOf(bytes32)",
+          "transfer(address,address,bytes32,bool,bytes)",
+          "transferBatch(address[],address[],bytes32[],bool,bytes[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_existingTokens",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:37"
+            },
+            {
+              "label": "_tokenOwners",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_address)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:40"
+            },
+            {
+              "label": "_ownedTokens",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:43"
+            },
+            {
+              "label": "_operators",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:46"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)": {
+              "label": "mapping(address => struct EnumerableSet.Bytes32Set)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_address)": {
+              "label": "mapping(bytes32 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)": {
+              "label": "mapping(bytes32 => struct EnumerableSet.AddressSet)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)3299_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Bytes32Set)3192_storage": {
+              "label": "struct EnumerableSet.Bytes32Set",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Set)2998_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_indexes",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "UtilsLib": {
+        "src": "@lukso/lsp-smart-contracts/contracts/Utils/UtilsLib.sol:8",
+        "version": {
+          "withMetadata": "5b7d1a387e52b2f54b0e4b3df3636d94f11e72eb3c3b018c5157346d8505a539",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "0e860bb4c5921e9ae1c74f1c43339ffdc52edbf868fb94ae520b73759b7b4b95",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:191"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC165": {
+        "src": "@openzeppelin/contracts/utils/introspection/ERC165.sol:22",
+        "inherit": [
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC165": {
+        "src": "@openzeppelin/contracts/utils/introspection/IERC165.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "EnumerableSet": {
+        "src": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:38",
+        "version": {
+          "withMetadata": "ffb083e9643fa2f0508e1e5e22e8fe1b77e0e63ceec605f0ba992418ae980cfb",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC725YEnumerableSetUtil": {
+        "src": "contracts/ERC725YEnumerableSetUtil.sol:18",
+        "version": {
+          "withMetadata": "f61bd052fe45b55a5ea8c4d67b0d21ae2041f866e7a0afb09e5ee3280c00f3e5",
+          "withoutMetadata": "946cef4b6dea051aeb19a41a0d05a4675f6dc9a90eb37e0b0e1e1735e356b0de",
+          "linkedWithoutMetadata": "946cef4b6dea051aeb19a41a0d05a4675f6dc9a90eb37e0b0e1e1735e356b0de"
+        },
+        "inherit": [
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [
+          "LSP2KeyUtil",
+          "LSP2Utils"
+        ],
+        "methods": [
+          "(address)",
+          "addElementToEnumerableSet(bytes12,bytes32,address)",
+          "removeElementFromEnumerableSet(bytes12,bytes32,address)",
+          "getAddressIndexInEnumerableSet(bytes12,address)",
+          "isAddressInEnumerableSet(bytes12,address)",
+          "length(bytes32)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1094,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1499,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2694,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3720,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC725YEnumerableSetUtil",
+            "src": "contracts/ERC725YEnumerableSetUtil.sol:25"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "ISocialNetwork": {
+        "src": "contracts/ISocialNetwork.sol:15",
+        "inherit": [
+          "ILSP8IdentifiableDigitalAsset",
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "register()",
+          "likePost(address)",
+          "unlikePost(address)",
+          "subscribeUser(address)",
+          "unsubscribeUser(address)",
+          "createPost(bytes,address[])",
+          "commentPost(bytes,address[],address)",
+          "sharePost(bytes,address[],address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ISocialNetworkPost": {
+        "src": "contracts/ISocialNetworkPost.sol:16",
+        "inherit": [
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "author()",
+          "timestamp()",
+          "postType()",
+          "referencedPost()",
+          "isUserTagged(address)",
+          "isLikedBy(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "addComment(address)",
+          "addShare(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ISocialNetworkProfileData": {
+        "src": "contracts/ISocialNetworkProfileData.sol:19",
+        "inherit": [
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "user()",
+          "timestamp()",
+          "isTaggedIn(address)",
+          "addTag(address)",
+          "isAuthorOf(address)",
+          "addPost(address)",
+          "hasLiked(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "isSubscribedBy(address)",
+          "addSubscriber(address)",
+          "removeSubscriber(address)",
+          "isSubscriberOf(address)",
+          "addSubscription(address)",
+          "removeSubscription(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP2KeyUtil": {
+        "src": "contracts/LSP2KeyUtil.sol:9",
+        "version": {
+          "withMetadata": "3d1023cb490c5d06d9911675cc8c1524c27361654e40f4181fa93f866ffcddaa",
+          "withoutMetadata": "d45a63fd9afe8df563609eee62889729e4ec415d98fec42d67e2a30bcced71b6",
+          "linkedWithoutMetadata": "d45a63fd9afe8df563609eee62889729e4ec415d98fec42d67e2a30bcced71b6"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "getMappedAddressKeyName(bytes12,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetwork": {
+        "src": "contracts/SocialNetwork.sol:31",
+        "version": {
+          "withMetadata": "f6585869e48fdf39ea47af37a608e08e1ffa53b9933cd3ac921c92cb33940f05",
+          "withoutMetadata": "f6585869e48fdf39ea47af37a608e08e1ffa53b9933cd3ac921c92cb33940f05",
+          "linkedWithoutMetadata": "f6585869e48fdf39ea47af37a608e08e1ffa53b9933cd3ac921c92cb33940f05"
+        },
+        "inherit": [
+          "LSP8IdentifiableDigitalAsset",
+          "LSP8IdentifiableDigitalAssetCore",
+          "ISocialNetwork",
+          "ILSP8IdentifiableDigitalAsset",
+          "LSP4DigitalAssetMetadata",
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "Context",
+          "OwnableUnset"
+        ],
+        "libraries": [
+          "SocialNetworkProfileDataFactory",
+          "SocialNetworkPostFactory"
+        ],
+        "methods": [
+          "(bytes)",
+          "register()",
+          "likePost(address)",
+          "unlikePost(address)",
+          "subscribeUser(address)",
+          "unsubscribeUser(address)",
+          "createPost(bytes,address[])",
+          "commentPost(bytes,address[],address)",
+          "sharePost(bytes,address[],address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 7039,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 8773,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 12734,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkProfileDataFactory.sol",
+            "name": "SocialNetworkProfileDataFactory",
+            "length": 20,
+            "start": 5342,
+            "placeholder": "__$e1e9acb8cf0b7d9dd541aed3de0dc7916c$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SocialNetwork",
+            "src": "contracts/SocialNetwork.sol:38"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "registeredUserCount",
+            "src": "contracts/SocialNetwork.sol:36"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkPostFactory",
+            "src": "contracts/SocialNetworkPostFactory.sol"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkProfileDataFactory",
+            "src": "contracts/SocialNetworkProfileDataFactory.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "_existingTokens",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:37"
+            },
+            {
+              "label": "_tokenOwners",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_bytes32,t_address)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:40"
+            },
+            {
+              "label": "_ownedTokens",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:43"
+            },
+            {
+              "label": "_operators",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:46"
+            },
+            {
+              "label": "registeredUsers",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_mapping(t_address,t_address)",
+              "contract": "SocialNetwork",
+              "src": "contracts/SocialNetwork.sol:35"
+            },
+            {
+              "label": "registeredUserCount",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256",
+              "contract": "SocialNetwork",
+              "src": "contracts/SocialNetwork.sol:36"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)": {
+              "label": "mapping(address => struct EnumerableSet.Bytes32Set)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_address)": {
+              "label": "mapping(bytes32 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)": {
+              "label": "mapping(bytes32 => struct EnumerableSet.AddressSet)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)3299_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Bytes32Set)3192_storage": {
+              "label": "struct EnumerableSet.Bytes32Set",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Set)2998_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_indexes",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SocialNetworkPost": {
+        "src": "contracts/SocialNetworkPost.sol:24",
+        "version": {
+          "withMetadata": "05c842d1ec634ae0a7ebfc9471affa4fe6314febfc597c47315fb2df55cd24e8",
+          "withoutMetadata": "e44cf41cff06b7b4f99f0a175c608efafe0bf2b22032b05cf467b5cef45fa3a8",
+          "linkedWithoutMetadata": "e44cf41cff06b7b4f99f0a175c608efafe0bf2b22032b05cf467b5cef45fa3a8"
+        },
+        "inherit": [
+          "ERC725YEnumerableSetUtil",
+          "ERC725Y",
+          "ERC725YCore",
+          "ISocialNetworkPost",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,uint8,address[],bytes,address)",
+          "isUserTagged(address)",
+          "isLikedBy(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "addComment(address)",
+          "addShare(address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1686,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2414,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 5550,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 5955,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 7150,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 8430,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SocialNetworkPost",
+            "src": "contracts/SocialNetworkPost.sol:39"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "timestamp",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:25"
+            },
+            {
+              "label": "author",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:26"
+            },
+            {
+              "label": "postType",
+              "offset": 20,
+              "slot": "3",
+              "type": "t_enum(SocialNetworkPostType)6009",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:27"
+            },
+            {
+              "label": "referencedPost",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_address",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:28"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_enum(SocialNetworkPostType)6009": {
+              "label": "enum SocialNetworkPostType",
+              "members": [
+                "STANDALONE",
+                "COMMENT",
+                "SHARE"
+              ],
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SocialNetworkPostFactory": {
+        "src": "contracts/SocialNetworkPostFactory.sol:13",
+        "version": {
+          "withMetadata": "6d22a17ca89f76796e941dda0df3ee0cd7a332c544810932e8dd05fd7bcfb4c7",
+          "withoutMetadata": "43199a75956ff0fe8281e3a4bf02b0528c7ac24a9b5560c5145ed5dea3d7495e",
+          "linkedWithoutMetadata": "43199a75956ff0fe8281e3a4bf02b0528c7ac24a9b5560c5145ed5dea3d7495e"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createPost(address,address,bytes,address[])",
+          "createCommentPost(address,address,bytes,address[],address)",
+          "createSharePost(address,address,bytes,address[],address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3022,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3750,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 6886,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 7291,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 8486,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 9766,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetworkPostFactoryTest": {
+        "src": "contracts/SocialNetworkPostFactoryTest.sol:14",
+        "version": {
+          "withMetadata": "46547437215a0a676588b7a8f7ee22e165586837050e72d1ea155a8cc1842a57",
+          "withoutMetadata": "06614ae51a3acf4de37182b0de1e4cb9aa519652855b7ae41735988272a5f516",
+          "linkedWithoutMetadata": "06614ae51a3acf4de37182b0de1e4cb9aa519652855b7ae41735988272a5f516"
+        },
+        "inherit": [],
+        "libraries": [
+          "SocialNetworkPostFactory"
+        ],
+        "methods": [
+          "createPost(address,bytes,address[])",
+          "createCommentPost(address,bytes,address[],address)",
+          "createSharePost(address,bytes,address[],address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 205,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 455,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 708,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkPostFactory",
+            "src": "contracts/SocialNetworkPostFactory.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetworkProfileData": {
+        "src": "contracts/SocialNetworkProfileData.sol:28",
+        "version": {
+          "withMetadata": "4f86a9401c04ac53c58df7c943c891707037cf664cdd35c495586c0126bf6713",
+          "withoutMetadata": "035f361c0c94b178499e8801c3941f3f37b80b37104adbe7e5d9d460e0dad281",
+          "linkedWithoutMetadata": "035f361c0c94b178499e8801c3941f3f37b80b37104adbe7e5d9d460e0dad281"
+        },
+        "inherit": [
+          "ERC725YEnumerableSetUtil",
+          "ERC725Y",
+          "ERC725YCore",
+          "ISocialNetworkProfileData",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address)",
+          "isTaggedIn(address)",
+          "addTag(address)",
+          "isAuthorOf(address)",
+          "addPost(address)",
+          "hasLiked(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "isSubscribedBy(address)",
+          "addSubscriber(address)",
+          "removeSubscriber(address)",
+          "isSubscriberOf(address)",
+          "addSubscription(address)",
+          "removeSubscription(address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1738,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2143,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3425,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 4990,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SocialNetworkProfileData",
+            "src": "contracts/SocialNetworkProfileData.sol:40"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "user",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_address",
+              "contract": "SocialNetworkProfileData",
+              "src": "contracts/SocialNetworkProfileData.sol:32"
+            },
+            {
+              "label": "timestamp",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "SocialNetworkProfileData",
+              "src": "contracts/SocialNetworkProfileData.sol:33"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SocialNetworkProfileDataFactory": {
+        "src": "contracts/SocialNetworkProfileDataFactory.sol:12",
+        "version": {
+          "withMetadata": "494db8e2e67c9e1484b530e4bbe4a67aabc1fab0e6366eb3b19e17b5c58a6710",
+          "withoutMetadata": "00a4ce0beb46b46ed0cc4dbbe6663cbdb135e2b227d5d5aba7a4560fd8b884a6",
+          "linkedWithoutMetadata": "00a4ce0beb46b46ed0cc4dbbe6663cbdb135e2b227d5d5aba7a4560fd8b884a6"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createProfileData(address,address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2121,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2526,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3808,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 5373,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetworkProfileDataFactoryTest": {
+        "src": "contracts/SocialNetworkProfileDataFactoryTest.sol:13",
+        "version": {
+          "withMetadata": "c9763d7fe28a161eee6c24eca9906d136207b27aebe3fafa6bd2a4a3a390287f",
+          "withoutMetadata": "e21bf476e78dc2884131d297378682f3bfb3268416bd33282a94a5179196b66a",
+          "linkedWithoutMetadata": "e21bf476e78dc2884131d297378682f3bfb3268416bd33282a94a5179196b66a"
+        },
+        "inherit": [],
+        "libraries": [
+          "SocialNetworkProfileDataFactory"
+        ],
+        "methods": [
+          "createProfileData(address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/SocialNetworkProfileDataFactory.sol",
+            "name": "SocialNetworkProfileDataFactory",
+            "length": 20,
+            "start": 219,
+            "placeholder": "__$e1e9acb8cf0b7d9dd541aed3de0dc7916c$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkProfileDataFactory",
+            "src": "contracts/SocialNetworkProfileDataFactory.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BytesLib": {
+        "src": "solidity-bytes-utils/contracts/BytesLib.sol:12",
+        "version": {
+          "withMetadata": "aed649a59fae855f57f2c09edad27f1f5add947969b28532d74d69cad0f07c9d",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "ERC725Y": {
+        "src": "@erc725/smart-contracts/contracts/ERC725Y.sol:16",
+        "version": {
+          "withMetadata": "53ed062ec59ed41e9c2cfdabea0ca87a13c2559cde3227541159dfe7d91aadc5",
+          "withoutMetadata": "729c91f59517dd4625dc7ea77cbb3834bc2621906f5cb6827560521eb4f2e837",
+          "linkedWithoutMetadata": "729c91f59517dd4625dc7ea77cbb3834bc2621906f5cb6827560521eb4f2e837"
+        },
+        "inherit": [
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC725Y",
+            "src": "@erc725/smart-contracts/contracts/ERC725Y.sol:21"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "ERC725YCore": {
+        "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:25",
+        "inherit": [
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [
+          "GasLib"
+        ],
+        "methods": [
+          "getData(bytes32)",
+          "getData(bytes32[])",
+          "setData(bytes32,bytes)",
+          "setData(bytes32[],bytes[])",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "OwnableUnset": {
+        "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:11",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "IERC725Y": {
+        "src": "@erc725/smart-contracts/contracts/interfaces/IERC725Y.sol:13",
+        "inherit": [
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "getData(bytes32)",
+          "getData(bytes32[])",
+          "setData(bytes32,bytes)",
+          "setData(bytes32[],bytes[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "GasLib": {
+        "src": "@erc725/smart-contracts/contracts/utils/GasLib.sol:7",
+        "version": {
+          "withMetadata": "c75a5b7ce1f3108af3a65a919e6d08a155873760d9f008a5578624cf20c80767",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC165Checker": {
+        "src": "@lukso/lsp-smart-contracts/contracts/Custom/ERC165Checker.sol:21",
+        "version": {
+          "withMetadata": "15958ecda54a5382c262f4a9e3730a62881e44a2487e0902925342461c6cca10",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ILSP1UniversalReceiver": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP1UniversalReceiver/ILSP1UniversalReceiver.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "universalReceiver(bytes32,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP2Utils": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP2ERC725YJSONSchema/LSP2Utils.sol:14",
+        "version": {
+          "withMetadata": "8e1848564b9dea748a2021c500719a5f80640e3d618134cce6b317da1e578dbe",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "BytesLib",
+          "UtilsLib"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP4DigitalAssetMetadata": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4DigitalAssetMetadata.sol:18",
+        "inherit": [
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "LSP4DigitalAssetMetadata",
+            "src": "@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4DigitalAssetMetadata.sol:25"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "ILSP8IdentifiableDigitalAsset": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/ILSP8IdentifiableDigitalAsset.sol:12",
+        "inherit": [
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "tokenOwnerOf(bytes32)",
+          "tokenIdsOf(address)",
+          "authorizeOperator(address,bytes32)",
+          "revokeOperator(address,bytes32)",
+          "isOperatorFor(address,bytes32)",
+          "getOperatorsOf(bytes32)",
+          "transfer(address,address,bytes32,bool,bytes)",
+          "transferBatch(address[],address[],bytes32[],bool,bytes[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP8IdentifiableDigitalAsset": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAsset.sol:20",
+        "version": {
+          "withMetadata": "ff797980c9016fafe288f79a034af8e7b70b212682727a26d88497807cecf36c",
+          "withoutMetadata": "53c12736c4b81432b7fb9f539b819d0b7eb1f2c0d25897a098911a65c81d6ebf",
+          "linkedWithoutMetadata": "53c12736c4b81432b7fb9f539b819d0b7eb1f2c0d25897a098911a65c81d6ebf"
+        },
+        "inherit": [
+          "LSP8IdentifiableDigitalAssetCore",
+          "ILSP8IdentifiableDigitalAsset",
+          "LSP4DigitalAssetMetadata",
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "Context",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(string,string,address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "LSP8IdentifiableDigitalAsset",
+            "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAsset.sol:30"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "_existingTokens",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:37"
+            },
+            {
+              "label": "_tokenOwners",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_bytes32,t_address)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:40"
+            },
+            {
+              "label": "_ownedTokens",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:43"
+            },
+            {
+              "label": "_operators",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:46"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)": {
+              "label": "mapping(address => struct EnumerableSet.Bytes32Set)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_address)": {
+              "label": "mapping(bytes32 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)": {
+              "label": "mapping(bytes32 => struct EnumerableSet.AddressSet)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)3299_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Bytes32Set)3192_storage": {
+              "label": "struct EnumerableSet.Bytes32Set",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Set)2998_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_indexes",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "LSP8IdentifiableDigitalAssetCore": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:30",
+        "inherit": [
+          "ILSP8IdentifiableDigitalAsset",
+          "IERC725Y",
+          "IERC165",
+          "Context"
+        ],
+        "libraries": [
+          "EnumerableSet",
+          "Address",
+          "ERC165Checker"
+        ],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "tokenOwnerOf(bytes32)",
+          "tokenIdsOf(address)",
+          "authorizeOperator(address,bytes32)",
+          "revokeOperator(address,bytes32)",
+          "isOperatorFor(address,bytes32)",
+          "getOperatorsOf(bytes32)",
+          "transfer(address,address,bytes32,bool,bytes)",
+          "transferBatch(address[],address[],bytes32[],bool,bytes[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_existingTokens",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:37"
+            },
+            {
+              "label": "_tokenOwners",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_address)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:40"
+            },
+            {
+              "label": "_ownedTokens",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:43"
+            },
+            {
+              "label": "_operators",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:46"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)": {
+              "label": "mapping(address => struct EnumerableSet.Bytes32Set)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_address)": {
+              "label": "mapping(bytes32 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)": {
+              "label": "mapping(bytes32 => struct EnumerableSet.AddressSet)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)3299_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Bytes32Set)3192_storage": {
+              "label": "struct EnumerableSet.Bytes32Set",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Set)2998_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_indexes",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "UtilsLib": {
+        "src": "@lukso/lsp-smart-contracts/contracts/Utils/UtilsLib.sol:8",
+        "version": {
+          "withMetadata": "5b7d1a387e52b2f54b0e4b3df3636d94f11e72eb3c3b018c5157346d8505a539",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "0e860bb4c5921e9ae1c74f1c43339ffdc52edbf868fb94ae520b73759b7b4b95",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:191"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC165": {
+        "src": "@openzeppelin/contracts/utils/introspection/ERC165.sol:22",
+        "inherit": [
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC165": {
+        "src": "@openzeppelin/contracts/utils/introspection/IERC165.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "EnumerableSet": {
+        "src": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:38",
+        "version": {
+          "withMetadata": "ffb083e9643fa2f0508e1e5e22e8fe1b77e0e63ceec605f0ba992418ae980cfb",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC725YEnumerableSetUtil": {
+        "src": "contracts/ERC725YEnumerableSetUtil.sol:18",
+        "version": {
+          "withMetadata": "f61bd052fe45b55a5ea8c4d67b0d21ae2041f866e7a0afb09e5ee3280c00f3e5",
+          "withoutMetadata": "946cef4b6dea051aeb19a41a0d05a4675f6dc9a90eb37e0b0e1e1735e356b0de",
+          "linkedWithoutMetadata": "946cef4b6dea051aeb19a41a0d05a4675f6dc9a90eb37e0b0e1e1735e356b0de"
+        },
+        "inherit": [
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [
+          "LSP2KeyUtil",
+          "LSP2Utils"
+        ],
+        "methods": [
+          "(address)",
+          "addElementToEnumerableSet(bytes12,bytes32,address)",
+          "removeElementFromEnumerableSet(bytes12,bytes32,address)",
+          "getAddressIndexInEnumerableSet(bytes12,address)",
+          "isAddressInEnumerableSet(bytes12,address)",
+          "length(bytes32)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1094,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1499,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2694,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3720,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC725YEnumerableSetUtil",
+            "src": "contracts/ERC725YEnumerableSetUtil.sol:25"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "ISocialNetwork": {
+        "src": "contracts/ISocialNetwork.sol:15",
+        "inherit": [
+          "ILSP8IdentifiableDigitalAsset",
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "register()",
+          "likePost(address)",
+          "unlikePost(address)",
+          "subscribeUser(address)",
+          "unsubscribeUser(address)",
+          "createPost(bytes,address[])",
+          "commentPost(bytes,address[],address)",
+          "sharePost(bytes,address[],address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ISocialNetworkPost": {
+        "src": "contracts/ISocialNetworkPost.sol:16",
+        "inherit": [
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "author()",
+          "timestamp()",
+          "postType()",
+          "referencedPost()",
+          "isUserTagged(address)",
+          "isLikedBy(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "addComment(address)",
+          "addShare(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ISocialNetworkProfileData": {
+        "src": "contracts/ISocialNetworkProfileData.sol:19",
+        "inherit": [
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "user()",
+          "timestamp()",
+          "isTaggedIn(address)",
+          "addTag(address)",
+          "isAuthorOf(address)",
+          "addPost(address)",
+          "hasLiked(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "isSubscribedBy(address)",
+          "addSubscriber(address)",
+          "removeSubscriber(address)",
+          "isSubscriberOf(address)",
+          "addSubscription(address)",
+          "removeSubscription(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP2KeyUtil": {
+        "src": "contracts/LSP2KeyUtil.sol:9",
+        "version": {
+          "withMetadata": "3d1023cb490c5d06d9911675cc8c1524c27361654e40f4181fa93f866ffcddaa",
+          "withoutMetadata": "d45a63fd9afe8df563609eee62889729e4ec415d98fec42d67e2a30bcced71b6",
+          "linkedWithoutMetadata": "d45a63fd9afe8df563609eee62889729e4ec415d98fec42d67e2a30bcced71b6"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "getMappedAddressKeyName(bytes12,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetwork": {
+        "src": "contracts/SocialNetwork.sol:31",
+        "version": {
+          "withMetadata": "a2d6b70678038b5f8cd5ce53fbc878da673d57779e21499fe7a14c69d24e2072",
+          "withoutMetadata": "a2d6b70678038b5f8cd5ce53fbc878da673d57779e21499fe7a14c69d24e2072",
+          "linkedWithoutMetadata": "a2d6b70678038b5f8cd5ce53fbc878da673d57779e21499fe7a14c69d24e2072"
+        },
+        "inherit": [
+          "LSP8IdentifiableDigitalAsset",
+          "LSP8IdentifiableDigitalAssetCore",
+          "ISocialNetwork",
+          "ILSP8IdentifiableDigitalAsset",
+          "LSP4DigitalAssetMetadata",
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "Context",
+          "OwnableUnset"
+        ],
+        "libraries": [
+          "SocialNetworkProfileDataFactory",
+          "SocialNetworkPostFactory"
+        ],
+        "methods": [
+          "(bytes)",
+          "register()",
+          "likePost(address)",
+          "unlikePost(address)",
+          "subscribeUser(address)",
+          "unsubscribeUser(address)",
+          "createPost(bytes,address[])",
+          "commentPost(bytes,address[],address)",
+          "sharePost(bytes,address[],address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 7039,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 8773,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 12734,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkProfileDataFactory.sol",
+            "name": "SocialNetworkProfileDataFactory",
+            "length": 20,
+            "start": 5342,
+            "placeholder": "__$e1e9acb8cf0b7d9dd541aed3de0dc7916c$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SocialNetwork",
+            "src": "contracts/SocialNetwork.sol:38"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "registeredUserCount",
+            "src": "contracts/SocialNetwork.sol:36"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkPostFactory",
+            "src": "contracts/SocialNetworkPostFactory.sol"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkProfileDataFactory",
+            "src": "contracts/SocialNetworkProfileDataFactory.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "_existingTokens",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:37"
+            },
+            {
+              "label": "_tokenOwners",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_bytes32,t_address)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:40"
+            },
+            {
+              "label": "_ownedTokens",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:43"
+            },
+            {
+              "label": "_operators",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:46"
+            },
+            {
+              "label": "registeredUsers",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_mapping(t_address,t_address)",
+              "contract": "SocialNetwork",
+              "src": "contracts/SocialNetwork.sol:35"
+            },
+            {
+              "label": "registeredUserCount",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256",
+              "contract": "SocialNetwork",
+              "src": "contracts/SocialNetwork.sol:36"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)": {
+              "label": "mapping(address => struct EnumerableSet.Bytes32Set)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_address)": {
+              "label": "mapping(bytes32 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)": {
+              "label": "mapping(bytes32 => struct EnumerableSet.AddressSet)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)3299_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Bytes32Set)3192_storage": {
+              "label": "struct EnumerableSet.Bytes32Set",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Set)2998_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_indexes",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SocialNetworkPost": {
+        "src": "contracts/SocialNetworkPost.sol:24",
+        "version": {
+          "withMetadata": "05c842d1ec634ae0a7ebfc9471affa4fe6314febfc597c47315fb2df55cd24e8",
+          "withoutMetadata": "e44cf41cff06b7b4f99f0a175c608efafe0bf2b22032b05cf467b5cef45fa3a8",
+          "linkedWithoutMetadata": "e44cf41cff06b7b4f99f0a175c608efafe0bf2b22032b05cf467b5cef45fa3a8"
+        },
+        "inherit": [
+          "ERC725YEnumerableSetUtil",
+          "ERC725Y",
+          "ERC725YCore",
+          "ISocialNetworkPost",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,uint8,address[],bytes,address)",
+          "isUserTagged(address)",
+          "isLikedBy(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "addComment(address)",
+          "addShare(address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1686,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2414,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 5550,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 5955,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 7150,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 8430,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SocialNetworkPost",
+            "src": "contracts/SocialNetworkPost.sol:39"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "timestamp",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:25"
+            },
+            {
+              "label": "author",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:26"
+            },
+            {
+              "label": "postType",
+              "offset": 20,
+              "slot": "3",
+              "type": "t_enum(SocialNetworkPostType)6009",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:27"
+            },
+            {
+              "label": "referencedPost",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_address",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:28"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_enum(SocialNetworkPostType)6009": {
+              "label": "enum SocialNetworkPostType",
+              "members": [
+                "STANDALONE",
+                "COMMENT",
+                "SHARE"
+              ],
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SocialNetworkPostFactory": {
+        "src": "contracts/SocialNetworkPostFactory.sol:13",
+        "version": {
+          "withMetadata": "6d22a17ca89f76796e941dda0df3ee0cd7a332c544810932e8dd05fd7bcfb4c7",
+          "withoutMetadata": "43199a75956ff0fe8281e3a4bf02b0528c7ac24a9b5560c5145ed5dea3d7495e",
+          "linkedWithoutMetadata": "43199a75956ff0fe8281e3a4bf02b0528c7ac24a9b5560c5145ed5dea3d7495e"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createPost(address,address,bytes,address[])",
+          "createCommentPost(address,address,bytes,address[],address)",
+          "createSharePost(address,address,bytes,address[],address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3022,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3750,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 6886,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 7291,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 8486,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 9766,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetworkPostFactoryTest": {
+        "src": "contracts/SocialNetworkPostFactoryTest.sol:14",
+        "version": {
+          "withMetadata": "46547437215a0a676588b7a8f7ee22e165586837050e72d1ea155a8cc1842a57",
+          "withoutMetadata": "06614ae51a3acf4de37182b0de1e4cb9aa519652855b7ae41735988272a5f516",
+          "linkedWithoutMetadata": "06614ae51a3acf4de37182b0de1e4cb9aa519652855b7ae41735988272a5f516"
+        },
+        "inherit": [],
+        "libraries": [
+          "SocialNetworkPostFactory"
+        ],
+        "methods": [
+          "createPost(address,bytes,address[])",
+          "createCommentPost(address,bytes,address[],address)",
+          "createSharePost(address,bytes,address[],address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 205,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 455,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 708,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkPostFactory",
+            "src": "contracts/SocialNetworkPostFactory.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetworkProfileData": {
+        "src": "contracts/SocialNetworkProfileData.sol:28",
+        "version": {
+          "withMetadata": "4f86a9401c04ac53c58df7c943c891707037cf664cdd35c495586c0126bf6713",
+          "withoutMetadata": "035f361c0c94b178499e8801c3941f3f37b80b37104adbe7e5d9d460e0dad281",
+          "linkedWithoutMetadata": "035f361c0c94b178499e8801c3941f3f37b80b37104adbe7e5d9d460e0dad281"
+        },
+        "inherit": [
+          "ERC725YEnumerableSetUtil",
+          "ERC725Y",
+          "ERC725YCore",
+          "ISocialNetworkProfileData",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address)",
+          "isTaggedIn(address)",
+          "addTag(address)",
+          "isAuthorOf(address)",
+          "addPost(address)",
+          "hasLiked(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "isSubscribedBy(address)",
+          "addSubscriber(address)",
+          "removeSubscriber(address)",
+          "isSubscriberOf(address)",
+          "addSubscription(address)",
+          "removeSubscription(address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1738,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2143,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3425,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 4990,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SocialNetworkProfileData",
+            "src": "contracts/SocialNetworkProfileData.sol:40"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "user",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_address",
+              "contract": "SocialNetworkProfileData",
+              "src": "contracts/SocialNetworkProfileData.sol:32"
+            },
+            {
+              "label": "timestamp",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "SocialNetworkProfileData",
+              "src": "contracts/SocialNetworkProfileData.sol:33"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SocialNetworkProfileDataFactory": {
+        "src": "contracts/SocialNetworkProfileDataFactory.sol:12",
+        "version": {
+          "withMetadata": "494db8e2e67c9e1484b530e4bbe4a67aabc1fab0e6366eb3b19e17b5c58a6710",
+          "withoutMetadata": "00a4ce0beb46b46ed0cc4dbbe6663cbdb135e2b227d5d5aba7a4560fd8b884a6",
+          "linkedWithoutMetadata": "00a4ce0beb46b46ed0cc4dbbe6663cbdb135e2b227d5d5aba7a4560fd8b884a6"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createProfileData(address,address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2121,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2526,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3808,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 5373,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetworkProfileDataFactoryTest": {
+        "src": "contracts/SocialNetworkProfileDataFactoryTest.sol:13",
+        "version": {
+          "withMetadata": "c9763d7fe28a161eee6c24eca9906d136207b27aebe3fafa6bd2a4a3a390287f",
+          "withoutMetadata": "e21bf476e78dc2884131d297378682f3bfb3268416bd33282a94a5179196b66a",
+          "linkedWithoutMetadata": "e21bf476e78dc2884131d297378682f3bfb3268416bd33282a94a5179196b66a"
+        },
+        "inherit": [],
+        "libraries": [
+          "SocialNetworkProfileDataFactory"
+        ],
+        "methods": [
+          "createProfileData(address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/SocialNetworkProfileDataFactory.sol",
+            "name": "SocialNetworkProfileDataFactory",
+            "length": 20,
+            "start": 219,
+            "placeholder": "__$e1e9acb8cf0b7d9dd541aed3de0dc7916c$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkProfileDataFactory",
+            "src": "contracts/SocialNetworkProfileDataFactory.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BytesLib": {
+        "src": "solidity-bytes-utils/contracts/BytesLib.sol:12",
+        "version": {
+          "withMetadata": "aed649a59fae855f57f2c09edad27f1f5add947969b28532d74d69cad0f07c9d",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "ERC725Y": {
+        "src": "@erc725/smart-contracts/contracts/ERC725Y.sol:16",
+        "version": {
+          "withMetadata": "53ed062ec59ed41e9c2cfdabea0ca87a13c2559cde3227541159dfe7d91aadc5",
+          "withoutMetadata": "729c91f59517dd4625dc7ea77cbb3834bc2621906f5cb6827560521eb4f2e837",
+          "linkedWithoutMetadata": "729c91f59517dd4625dc7ea77cbb3834bc2621906f5cb6827560521eb4f2e837"
+        },
+        "inherit": [
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC725Y",
+            "src": "@erc725/smart-contracts/contracts/ERC725Y.sol:21"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "ERC725YCore": {
+        "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:25",
+        "inherit": [
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [
+          "GasLib"
+        ],
+        "methods": [
+          "getData(bytes32)",
+          "getData(bytes32[])",
+          "setData(bytes32,bytes)",
+          "setData(bytes32[],bytes[])",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "OwnableUnset": {
+        "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:11",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "IERC725Y": {
+        "src": "@erc725/smart-contracts/contracts/interfaces/IERC725Y.sol:13",
+        "inherit": [
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "getData(bytes32)",
+          "getData(bytes32[])",
+          "setData(bytes32,bytes)",
+          "setData(bytes32[],bytes[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "GasLib": {
+        "src": "@erc725/smart-contracts/contracts/utils/GasLib.sol:7",
+        "version": {
+          "withMetadata": "c75a5b7ce1f3108af3a65a919e6d08a155873760d9f008a5578624cf20c80767",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC165Checker": {
+        "src": "@lukso/lsp-smart-contracts/contracts/Custom/ERC165Checker.sol:21",
+        "version": {
+          "withMetadata": "15958ecda54a5382c262f4a9e3730a62881e44a2487e0902925342461c6cca10",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ILSP1UniversalReceiver": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP1UniversalReceiver/ILSP1UniversalReceiver.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "universalReceiver(bytes32,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP2Utils": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP2ERC725YJSONSchema/LSP2Utils.sol:14",
+        "version": {
+          "withMetadata": "8e1848564b9dea748a2021c500719a5f80640e3d618134cce6b317da1e578dbe",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "BytesLib",
+          "UtilsLib"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP4DigitalAssetMetadata": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4DigitalAssetMetadata.sol:18",
+        "inherit": [
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "LSP4DigitalAssetMetadata",
+            "src": "@lukso/lsp-smart-contracts/contracts/LSP4DigitalAssetMetadata/LSP4DigitalAssetMetadata.sol:25"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "ILSP8IdentifiableDigitalAsset": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/ILSP8IdentifiableDigitalAsset.sol:12",
+        "inherit": [
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "tokenOwnerOf(bytes32)",
+          "tokenIdsOf(address)",
+          "authorizeOperator(address,bytes32)",
+          "revokeOperator(address,bytes32)",
+          "isOperatorFor(address,bytes32)",
+          "getOperatorsOf(bytes32)",
+          "transfer(address,address,bytes32,bool,bytes)",
+          "transferBatch(address[],address[],bytes32[],bool,bytes[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP8IdentifiableDigitalAsset": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAsset.sol:20",
+        "version": {
+          "withMetadata": "ff797980c9016fafe288f79a034af8e7b70b212682727a26d88497807cecf36c",
+          "withoutMetadata": "53c12736c4b81432b7fb9f539b819d0b7eb1f2c0d25897a098911a65c81d6ebf",
+          "linkedWithoutMetadata": "53c12736c4b81432b7fb9f539b819d0b7eb1f2c0d25897a098911a65c81d6ebf"
+        },
+        "inherit": [
+          "LSP8IdentifiableDigitalAssetCore",
+          "ILSP8IdentifiableDigitalAsset",
+          "LSP4DigitalAssetMetadata",
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "Context",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(string,string,address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "LSP8IdentifiableDigitalAsset",
+            "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAsset.sol:30"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "_existingTokens",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:37"
+            },
+            {
+              "label": "_tokenOwners",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_bytes32,t_address)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:40"
+            },
+            {
+              "label": "_ownedTokens",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:43"
+            },
+            {
+              "label": "_operators",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:46"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)": {
+              "label": "mapping(address => struct EnumerableSet.Bytes32Set)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_address)": {
+              "label": "mapping(bytes32 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)": {
+              "label": "mapping(bytes32 => struct EnumerableSet.AddressSet)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)3299_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Bytes32Set)3192_storage": {
+              "label": "struct EnumerableSet.Bytes32Set",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Set)2998_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_indexes",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "LSP8IdentifiableDigitalAssetCore": {
+        "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:30",
+        "inherit": [
+          "ILSP8IdentifiableDigitalAsset",
+          "IERC725Y",
+          "IERC165",
+          "Context"
+        ],
+        "libraries": [
+          "EnumerableSet",
+          "Address",
+          "ERC165Checker"
+        ],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "tokenOwnerOf(bytes32)",
+          "tokenIdsOf(address)",
+          "authorizeOperator(address,bytes32)",
+          "revokeOperator(address,bytes32)",
+          "isOperatorFor(address,bytes32)",
+          "getOperatorsOf(bytes32)",
+          "transfer(address,address,bytes32,bool,bytes)",
+          "transferBatch(address[],address[],bytes32[],bool,bytes[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_existingTokens",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:37"
+            },
+            {
+              "label": "_tokenOwners",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_address)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:40"
+            },
+            {
+              "label": "_ownedTokens",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:43"
+            },
+            {
+              "label": "_operators",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:46"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)": {
+              "label": "mapping(address => struct EnumerableSet.Bytes32Set)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_address)": {
+              "label": "mapping(bytes32 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)": {
+              "label": "mapping(bytes32 => struct EnumerableSet.AddressSet)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)3299_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Bytes32Set)3192_storage": {
+              "label": "struct EnumerableSet.Bytes32Set",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Set)2998_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_indexes",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "UtilsLib": {
+        "src": "@lukso/lsp-smart-contracts/contracts/Utils/UtilsLib.sol:8",
+        "version": {
+          "withMetadata": "5b7d1a387e52b2f54b0e4b3df3636d94f11e72eb3c3b018c5157346d8505a539",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "0e860bb4c5921e9ae1c74f1c43339ffdc52edbf868fb94ae520b73759b7b4b95",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:191"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC165": {
+        "src": "@openzeppelin/contracts/utils/introspection/ERC165.sol:22",
+        "inherit": [
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC165": {
+        "src": "@openzeppelin/contracts/utils/introspection/IERC165.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "EnumerableSet": {
+        "src": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:38",
+        "version": {
+          "withMetadata": "ffb083e9643fa2f0508e1e5e22e8fe1b77e0e63ceec605f0ba992418ae980cfb",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC725YEnumerableSetUtil": {
+        "src": "contracts/ERC725YEnumerableSetUtil.sol:18",
+        "version": {
+          "withMetadata": "f61bd052fe45b55a5ea8c4d67b0d21ae2041f866e7a0afb09e5ee3280c00f3e5",
+          "withoutMetadata": "946cef4b6dea051aeb19a41a0d05a4675f6dc9a90eb37e0b0e1e1735e356b0de",
+          "linkedWithoutMetadata": "946cef4b6dea051aeb19a41a0d05a4675f6dc9a90eb37e0b0e1e1735e356b0de"
+        },
+        "inherit": [
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [
+          "LSP2KeyUtil",
+          "LSP2Utils"
+        ],
+        "methods": [
+          "(address)",
+          "addElementToEnumerableSet(bytes12,bytes32,address)",
+          "removeElementFromEnumerableSet(bytes12,bytes32,address)",
+          "getAddressIndexInEnumerableSet(bytes12,address)",
+          "isAddressInEnumerableSet(bytes12,address)",
+          "length(bytes32)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1094,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1499,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2694,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3720,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC725YEnumerableSetUtil",
+            "src": "contracts/ERC725YEnumerableSetUtil.sol:25"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "ISocialNetwork": {
+        "src": "contracts/ISocialNetwork.sol:12",
+        "inherit": [
+          "ILSP8IdentifiableDigitalAsset",
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "register()",
+          "likePost(address)",
+          "unlikePost(address)",
+          "subscribeUser(address)",
+          "unsubscribeUser(address)",
+          "createPost(bytes,address[])",
+          "commentPost(bytes,address[],address)",
+          "sharePost(bytes,address[],address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ISocialNetworkPost": {
+        "src": "contracts/ISocialNetworkPost.sol:16",
+        "inherit": [
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "author()",
+          "timestamp()",
+          "postType()",
+          "referencedPost()",
+          "isUserTagged(address)",
+          "isLikedBy(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "addComment(address)",
+          "addShare(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ISocialNetworkProfileData": {
+        "src": "contracts/ISocialNetworkProfileData.sol:19",
+        "inherit": [
+          "IERC725Y",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "user()",
+          "timestamp()",
+          "isTaggedIn(address)",
+          "addTag(address)",
+          "isAuthorOf(address)",
+          "addPost(address)",
+          "hasLiked(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "isSubscribedBy(address)",
+          "addSubscriber(address)",
+          "removeSubscriber(address)",
+          "isSubscriberOf(address)",
+          "addSubscription(address)",
+          "removeSubscription(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LSP2KeyUtil": {
+        "src": "contracts/LSP2KeyUtil.sol:9",
+        "version": {
+          "withMetadata": "3d1023cb490c5d06d9911675cc8c1524c27361654e40f4181fa93f866ffcddaa",
+          "withoutMetadata": "d45a63fd9afe8df563609eee62889729e4ec415d98fec42d67e2a30bcced71b6",
+          "linkedWithoutMetadata": "d45a63fd9afe8df563609eee62889729e4ec415d98fec42d67e2a30bcced71b6"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "getMappedAddressKeyName(bytes12,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetwork": {
+        "src": "contracts/SocialNetwork.sol:30",
+        "version": {
+          "withMetadata": "c3663645bca2d32fdd92e0810ff59ef277544411572bf02293520d657892e25f",
+          "withoutMetadata": "c3663645bca2d32fdd92e0810ff59ef277544411572bf02293520d657892e25f",
+          "linkedWithoutMetadata": "c3663645bca2d32fdd92e0810ff59ef277544411572bf02293520d657892e25f"
+        },
+        "inherit": [
+          "LSP8IdentifiableDigitalAsset",
+          "LSP8IdentifiableDigitalAssetCore",
+          "ISocialNetwork",
+          "ILSP8IdentifiableDigitalAsset",
+          "LSP4DigitalAssetMetadata",
+          "ERC725Y",
+          "ERC725YCore",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "Context",
+          "OwnableUnset"
+        ],
+        "libraries": [
+          "SocialNetworkProfileDataFactory",
+          "SocialNetworkPostFactory"
+        ],
+        "methods": [
+          "(bytes)",
+          "register()",
+          "likePost(address)",
+          "unlikePost(address)",
+          "subscribeUser(address)",
+          "unsubscribeUser(address)",
+          "createPost(bytes,address[])",
+          "commentPost(bytes,address[],address)",
+          "sharePost(bytes,address[],address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 7039,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 8780,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 12733,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkProfileDataFactory.sol",
+            "name": "SocialNetworkProfileDataFactory",
+            "length": 20,
+            "start": 5342,
+            "placeholder": "__$e1e9acb8cf0b7d9dd541aed3de0dc7916c$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SocialNetwork",
+            "src": "contracts/SocialNetwork.sol:37"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "registeredUserCount",
+            "src": "contracts/SocialNetwork.sol:35"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkPostFactory",
+            "src": "contracts/SocialNetworkPostFactory.sol"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkProfileDataFactory",
+            "src": "contracts/SocialNetworkProfileDataFactory.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "_existingTokens",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:37"
+            },
+            {
+              "label": "_tokenOwners",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_bytes32,t_address)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:40"
+            },
+            {
+              "label": "_ownedTokens",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:43"
+            },
+            {
+              "label": "_operators",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)",
+              "contract": "LSP8IdentifiableDigitalAssetCore",
+              "src": "@lukso/lsp-smart-contracts/contracts/LSP8IdentifiableDigitalAsset/LSP8IdentifiableDigitalAssetCore.sol:46"
+            },
+            {
+              "label": "registeredUsers",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_mapping(t_address,t_address)",
+              "contract": "SocialNetwork",
+              "src": "contracts/SocialNetwork.sol:34"
+            },
+            {
+              "label": "registeredUserCount",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256",
+              "contract": "SocialNetwork",
+              "src": "contracts/SocialNetwork.sol:35"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(Bytes32Set)3192_storage)": {
+              "label": "mapping(address => struct EnumerableSet.Bytes32Set)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_address)": {
+              "label": "mapping(bytes32 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(AddressSet)3299_storage)": {
+              "label": "mapping(bytes32 => struct EnumerableSet.AddressSet)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)3299_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Bytes32Set)3192_storage": {
+              "label": "struct EnumerableSet.Bytes32Set",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)2998_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(Set)2998_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_indexes",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SocialNetworkPost": {
+        "src": "contracts/SocialNetworkPost.sol:24",
+        "version": {
+          "withMetadata": "05c842d1ec634ae0a7ebfc9471affa4fe6314febfc597c47315fb2df55cd24e8",
+          "withoutMetadata": "e44cf41cff06b7b4f99f0a175c608efafe0bf2b22032b05cf467b5cef45fa3a8",
+          "linkedWithoutMetadata": "e44cf41cff06b7b4f99f0a175c608efafe0bf2b22032b05cf467b5cef45fa3a8"
+        },
+        "inherit": [
+          "ERC725YEnumerableSetUtil",
+          "ERC725Y",
+          "ERC725YCore",
+          "ISocialNetworkPost",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,uint8,address[],bytes,address)",
+          "isUserTagged(address)",
+          "isLikedBy(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "addComment(address)",
+          "addShare(address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1686,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2414,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 5550,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 5955,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 7150,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 8430,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SocialNetworkPost",
+            "src": "contracts/SocialNetworkPost.sol:39"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "timestamp",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:25"
+            },
+            {
+              "label": "author",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:26"
+            },
+            {
+              "label": "postType",
+              "offset": 20,
+              "slot": "3",
+              "type": "t_enum(SocialNetworkPostType)6012",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:27"
+            },
+            {
+              "label": "referencedPost",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_address",
+              "contract": "SocialNetworkPost",
+              "src": "contracts/SocialNetworkPost.sol:28"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_enum(SocialNetworkPostType)6012": {
+              "label": "enum SocialNetworkPostType",
+              "members": [
+                "STANDALONE",
+                "COMMENT",
+                "SHARE"
+              ],
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SocialNetworkPostFactory": {
+        "src": "contracts/SocialNetworkPostFactory.sol:13",
+        "version": {
+          "withMetadata": "6d22a17ca89f76796e941dda0df3ee0cd7a332c544810932e8dd05fd7bcfb4c7",
+          "withoutMetadata": "43199a75956ff0fe8281e3a4bf02b0528c7ac24a9b5560c5145ed5dea3d7495e",
+          "linkedWithoutMetadata": "43199a75956ff0fe8281e3a4bf02b0528c7ac24a9b5560c5145ed5dea3d7495e"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createPost(address,address,bytes,address[])",
+          "createCommentPost(address,address,bytes,address[],address)",
+          "createSharePost(address,address,bytes,address[],address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3022,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3750,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 6886,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 7291,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 8486,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 9766,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetworkPostFactoryTest": {
+        "src": "contracts/SocialNetworkPostFactoryTest.sol:14",
+        "version": {
+          "withMetadata": "46547437215a0a676588b7a8f7ee22e165586837050e72d1ea155a8cc1842a57",
+          "withoutMetadata": "06614ae51a3acf4de37182b0de1e4cb9aa519652855b7ae41735988272a5f516",
+          "linkedWithoutMetadata": "06614ae51a3acf4de37182b0de1e4cb9aa519652855b7ae41735988272a5f516"
+        },
+        "inherit": [],
+        "libraries": [
+          "SocialNetworkPostFactory"
+        ],
+        "methods": [
+          "createPost(address,bytes,address[])",
+          "createCommentPost(address,bytes,address[],address)",
+          "createSharePost(address,bytes,address[],address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 205,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 455,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          },
+          {
+            "src": "contracts/SocialNetworkPostFactory.sol",
+            "name": "SocialNetworkPostFactory",
+            "length": 20,
+            "start": 708,
+            "placeholder": "__$166ae69d81e0c2a85c28a3b44767a780af$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkPostFactory",
+            "src": "contracts/SocialNetworkPostFactory.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetworkProfileData": {
+        "src": "contracts/SocialNetworkProfileData.sol:28",
+        "version": {
+          "withMetadata": "4f86a9401c04ac53c58df7c943c891707037cf664cdd35c495586c0126bf6713",
+          "withoutMetadata": "035f361c0c94b178499e8801c3941f3f37b80b37104adbe7e5d9d460e0dad281",
+          "linkedWithoutMetadata": "035f361c0c94b178499e8801c3941f3f37b80b37104adbe7e5d9d460e0dad281"
+        },
+        "inherit": [
+          "ERC725YEnumerableSetUtil",
+          "ERC725Y",
+          "ERC725YCore",
+          "ISocialNetworkProfileData",
+          "IERC725Y",
+          "ERC165",
+          "IERC165",
+          "OwnableUnset"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address)",
+          "isTaggedIn(address)",
+          "addTag(address)",
+          "isAuthorOf(address)",
+          "addPost(address)",
+          "hasLiked(address)",
+          "addLike(address)",
+          "removeLike(address)",
+          "isSubscribedBy(address)",
+          "addSubscriber(address)",
+          "removeSubscriber(address)",
+          "isSubscriberOf(address)",
+          "addSubscription(address)",
+          "removeSubscription(address)",
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 1738,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2143,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3425,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 4990,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SocialNetworkProfileData",
+            "src": "contracts/SocialNetworkProfileData.sol:40"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OwnableUnset",
+              "src": "@erc725/smart-contracts/contracts/custom/OwnableUnset.sol:12"
+            },
+            {
+              "label": "store",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "contract": "ERC725YCore",
+              "src": "@erc725/smart-contracts/contracts/ERC725YCore.sol:29"
+            },
+            {
+              "label": "user",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_address",
+              "contract": "SocialNetworkProfileData",
+              "src": "contracts/SocialNetworkProfileData.sol:32"
+            },
+            {
+              "label": "timestamp",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "SocialNetworkProfileData",
+              "src": "contracts/SocialNetworkProfileData.sol:33"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SocialNetworkProfileDataFactory": {
+        "src": "contracts/SocialNetworkProfileDataFactory.sol:12",
+        "version": {
+          "withMetadata": "494db8e2e67c9e1484b530e4bbe4a67aabc1fab0e6366eb3b19e17b5c58a6710",
+          "withoutMetadata": "00a4ce0beb46b46ed0cc4dbbe6663cbdb135e2b227d5d5aba7a4560fd8b884a6",
+          "linkedWithoutMetadata": "00a4ce0beb46b46ed0cc4dbbe6663cbdb135e2b227d5d5aba7a4560fd8b884a6"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createProfileData(address,address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2121,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 2526,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 3808,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          },
+          {
+            "src": "contracts/LSP2KeyUtil.sol",
+            "name": "LSP2KeyUtil",
+            "length": 20,
+            "start": 5373,
+            "placeholder": "__$2ed68bf94fb46cb586c30c069e83373029$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "LSP2KeyUtil",
+            "src": "contracts/LSP2KeyUtil.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SocialNetworkProfileDataFactoryTest": {
+        "src": "contracts/SocialNetworkProfileDataFactoryTest.sol:13",
+        "version": {
+          "withMetadata": "c9763d7fe28a161eee6c24eca9906d136207b27aebe3fafa6bd2a4a3a390287f",
+          "withoutMetadata": "e21bf476e78dc2884131d297378682f3bfb3268416bd33282a94a5179196b66a",
+          "linkedWithoutMetadata": "e21bf476e78dc2884131d297378682f3bfb3268416bd33282a94a5179196b66a"
+        },
+        "inherit": [],
+        "libraries": [
+          "SocialNetworkProfileDataFactory"
+        ],
+        "methods": [
+          "createProfileData(address)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/SocialNetworkProfileDataFactory.sol",
+            "name": "SocialNetworkProfileDataFactory",
+            "length": 20,
+            "start": 219,
+            "placeholder": "__$e1e9acb8cf0b7d9dd541aed3de0dc7916c$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "external-library-linking",
+            "name": "SocialNetworkProfileDataFactory",
+            "src": "contracts/SocialNetworkProfileDataFactory.sol"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "BytesLib": {
+        "src": "solidity-bytes-utils/contracts/BytesLib.sol:12",
+        "version": {
+          "withMetadata": "aed649a59fae855f57f2c09edad27f1f5add947969b28532d74d69cad0f07c9d",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    }
+  ]
+}
