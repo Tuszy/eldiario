@@ -6,7 +6,7 @@ Decentralized social media feed powered by the LUKSO blockchain.
 | Project | El Diario |
 | Name | Dennis Tuszynski |
 | Email | denniro@gmail.com |
-| App | https://el-diar.io |
+| App | [https://el-diar.io](https://el-diario-tawny.vercel.app/) |
 | Frontend | [frontend](https://github.com/Tuszy/eldiario/tree/main/frontend) |
 | Contracts | [contracts](https://github.com/Tuszy/eldiario/tree/main/smart-contract) |
 
